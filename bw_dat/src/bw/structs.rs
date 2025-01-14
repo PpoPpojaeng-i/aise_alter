@@ -34,7 +34,7 @@ pub struct Game {
     pub starting_local_player_id: u32,
     pub starting_player_types: [u8; 0xc],
     pub starting_races: [u8; 0xc],
-    pub gamelobby_races: [u8; 0xc],
+    pub game_lobby_races: [u8; 0xc],
     pub team_game_main_player: [u8; 4],
     pub screen_pos_x_tiles: u16,
     pub screen_pos_y_tiles: u16,
