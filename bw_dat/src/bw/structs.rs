@@ -652,7 +652,7 @@ pub struct Player {
     pub storm_id: u32,
     pub player_type: u8,
     pub race: u8,
-    pub race_name: str,
+    pub race_name: *const u8,
     pub race_id: u32,
     pub team: u8,
     pub name: [u8; 25],
