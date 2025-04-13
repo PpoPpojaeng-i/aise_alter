@@ -45,7 +45,7 @@ pub struct Game {
     pub dcf0: u8,
     pub active_net_players: u8,
     pub player_race: u8,
-    pub game_lobby_race_names: *const u8,
+    pub race_names: *const u8,
     pub custom_singleplayer: u8,
     pub dcf4: [u8; 0x8],
     pub visions: [u32; 0xc],
