@@ -34,7 +34,6 @@ pub struct Game {
     pub starting_local_player_id: u32,
     pub starting_player_types: [u8; 0xc],
     pub starting_races: [u8; 0xc],
-    pub game_lobby_races: [u8; 0xc],
     pub team_game_main_player: [u8; 4],
     pub screen_pos_x_tiles: u16,
     pub screen_pos_y_tiles: u16,
@@ -46,6 +45,7 @@ pub struct Game {
     pub dcf0: u8,
     pub active_net_players: u8,
     pub player_race: u8,
+    pub game_lobby_race_names: *const u8,
     pub custom_singleplayer: u8,
     pub dcf4: [u8; 0x8],
     pub visions: [u32; 0xc],
@@ -652,7 +652,6 @@ pub struct Player {
     pub storm_id: u32,
     pub player_type: u8,
     pub race: u8,
-    pub game_lobby_race_name: *const u8,
     pub team: u8,
     pub name: [u8; 25],
 }
