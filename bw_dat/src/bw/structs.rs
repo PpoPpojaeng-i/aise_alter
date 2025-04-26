@@ -651,6 +651,8 @@ pub struct Player {
     pub id: u32,
     pub storm_id: u32,
     pub player_type: u8,
+    pub selected_entry1: u8,
+    pub selected_entry2: u8,
     pub race: u8,
     pub team: u8,
     pub name: [u8; 25],
