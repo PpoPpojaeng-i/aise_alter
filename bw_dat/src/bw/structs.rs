@@ -45,7 +45,6 @@ pub struct Game {
     pub dcf0: u8,
     pub active_net_players: u8,
     pub player_race: u8,
-    pub race_names: *const u8,
     pub custom_singleplayer: u8,
     pub dcf4: [u8; 0x8],
     pub visions: [u32; 0xc],
@@ -114,6 +113,7 @@ pub struct Game {
     pub scr_color_unk: [u8; 0x8],
     pub scr_init_color_rgba: [[u8; 4]; 8],
     pub scr_unk1037a: [u8; 0x10],
+    pub player_select_race_id: u8,
     pub scr_player_color_preference: [u8; 0x10],
     pub padding: [u8; 0x7366],
 }
