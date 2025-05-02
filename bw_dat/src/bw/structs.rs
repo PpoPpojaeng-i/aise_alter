@@ -114,7 +114,7 @@ pub struct Game {
     pub scr_init_color_rgba: [[u8; 4]; 8],
     pub scr_unk1037a: [u8; 0x10],
     pub scr_player_color_preference: [u8; 0x10],
-    pub scr_player_race_id: [u8; 0x5],
+    pub scr_player_race_id: [u8; 0x8],
     pub padding: [u8; 0x7366],
 }
 
