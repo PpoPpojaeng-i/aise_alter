@@ -114,7 +114,6 @@ pub struct Game {
     pub scr_init_color_rgba: [[u8; 4]; 8],
     pub scr_unk1037a: [u8; 0x10],
     pub scr_player_color_preference: [u8; 0x10],
-    pub scr_player_race_id: [u8; 0x8],
     pub padding: [u8; 0x7366],
 }
 
@@ -651,7 +650,7 @@ pub struct Player {
     pub id: u32,
     pub storm_id: u32,
     pub player_type: u8,
-    pub race_id: u8,
+    pub requestracechange_race_id: u8,
     pub race: u8,
     pub team: u8,
     pub name: [u8; 25],
