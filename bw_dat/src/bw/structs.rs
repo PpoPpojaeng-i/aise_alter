@@ -18,7 +18,6 @@ pub use self::scr::ControlEvent;
 #[derive(Copy, Clone)]
 pub struct RequestRaceChange {
     pub id: u32,
-    pub race: String,
     pub selected_race: u32,
 }
 
