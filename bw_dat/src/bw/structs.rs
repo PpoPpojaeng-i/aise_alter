@@ -12,6 +12,16 @@ pub use self::scr::Control;
 #[cfg(any(feature = "scr-only", target_pointer_width = "64"))]
 pub use self::scr::ControlEvent;
 
+
+
+#[repr(C)]
+pub struct RequestRaceChange {
+    pub id: u32,
+    pub race: String,
+    pub selected_race: u32,
+}
+
+
 #[repr(C)]
 pub struct DatTable {
     pub data: *mut c_void,
@@ -650,7 +660,6 @@ pub struct Player {
     pub id: u32,
     pub storm_id: u32,
     pub player_type: u8,
-    pub selected_race: u8,
     pub race: u8,
     pub team: u8,
     pub name: [u8; 25],
